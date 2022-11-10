@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.514);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>schema</title>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+
+    <div id="leftMenu">
+        <a href="javscript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+        <div class="mainNav">
+            <a href="C:\Users\willi\Desktop\Na1\index.html">Hem</a>
+            <div class="dropdown">
+                <button class="dropbtn">Olika Scheman 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Vanligt</a>
+                  <a href="scheman/SpetsSchema.html">Spetsmatte</a>
+                  <a href="#">Spanska</a>
+                  <a href="#">Franska</a>
+                  <a href="#">Tyska</a>
+                </div>
+            </div> 
+            <a href="#">Schema</a>
+            <a href="#">Uppgifter</a>
+            <a href="#">Om Oss</a>
+            <a href="#">Anouncments</a>
+            <a href="quotes.html">𝓆𝓊𝑜𝓉𝑒𝓈</a>
+        <div>
+    </div>
+    <span onclick="openBtn()">&#9776; Menu</span>
+    
+    <div class="content">
+        <h2>Quotes</h2>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function openBtn()
+        {
+            document.getElementById("leftMenu").style.width = "250px";
+        }
+
+        function closeBtn()
+        {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+    </script>
+</body>
+</html>
