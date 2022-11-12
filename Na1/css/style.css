@@ -30,6 +30,7 @@ body {
 	place-items: center;
 	height: 100vh;
 }
+
         .content h2 {
 	font-family: impact;
 	text-align: center;
@@ -49,12 +50,14 @@ body {
         #leftMenu a:hover {
 	color: #fff;
 	background: crimson;
+	margin: 10px;
 }
         #leftMenu .btn-area {
             position: absolute;
             top: 0;
             right: 15px;
             font-size: 40px;
+			
         }
 
         span {
@@ -65,5 +68,8 @@ body {
 	transition: 0.3s;
 	cursor: pointer;
 	background-color: transparent;
+
 	
 }
+
+
