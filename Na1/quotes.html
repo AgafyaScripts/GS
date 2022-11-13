@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    <style>
+<style>
     body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,13 +36,13 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: red;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(5, 5, 5, 0.514);
+  background-color: #8a1c1c;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -86,8 +86,63 @@
   </div>
   <span onclick="openBtn()">&#9776; Menu</span>
     
+    <h1 style="text-align:center;font-size: xx-large; color: rgb(87, 145, 113);">Quotes</h1>
     <div class="content">
-        <h2>Quotes</h2>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-5k-wallpaper-triangles-green-272.jpg" style="width:100%">
+          <div class="text">Två dvärjar som försöker slåss om en banan</div>
+          <div style="position: absolute;
+          top: 80%;
+          left: 41%;
+          font-size:xx-large">Erik Strömberg</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-5k-wallpaper-triangles-green-272.jpg" style="width:100%">
+        <div class="text">Heil heil, vi spelar imorn!</div>
+          <div style="position: absolute;
+          top: 60%;
+          left: 43%;
+          font-size:xx-large">
+            Malte Wolf
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-5k-wallpaper-triangles-green-272.jpg" style="width:100%">
+        <div class="text">Dab👍</div>
+          <div style="position: absolute;
+          top: 60%;
+          left: 43%;
+          font-size:xx-large">
+            Malte Wolf
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-5k-wallpaper-triangles-green-272.jpg" style="width:100%">
+        <div class="text">Fakta</div>
+          <div style="position: absolute;
+          top: 60%;
+          left: 43%;
+          font-size:xx-large">
+            Malte Wolf
+          </div>
+        </div>
+        
+      
+
+      
+        <a class="prev" onclick="plusSlides(-1)" style="color:black">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" style="color:black">&#10095;</a>
+      </div>
+      <br>
+    
     </div>
     
 
@@ -101,6 +156,35 @@
         function closeBtn()
         {
             document.getElementById("leftMenu").style.width = "0";
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
         }
     </script>
 </body>
