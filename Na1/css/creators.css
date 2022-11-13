@@ -1,5 +1,6 @@
 body {
     font-family: impact;
+    background-image: url(https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?cs=srgb&dl=pexels-baskin-creative-studios-1766838.jpg&fm=jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -86,9 +87,25 @@ margin: 10px;
     text-align: center;
     color: white;
 }
-.knappfix {
-    text-align: right;
-  }
 .Under {
   color:white;
+}
+.lmao {
+  text-align: right;
+  margin-top: 1.5ch;
+  margin-right: 4ch;
+  font-size: 30px;
+}
+.Under2 {
+  color:yellow;
+}
+.End {
+  margin-top: 100ch;
+  color:red;
+  margin-bottom: 10ch;
+  text-align: center;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
 }
