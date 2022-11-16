@@ -1,11 +1,15 @@
 body {
             font-family: impact;
-            background-image: url(https://wallpapershome.com/images/wallpapers/nebula-3840x2160-space-stars-4k-6592.jpg);
-			background-color: #818181;
-			background-position: center;
-			background-size: 100%;
+            background-image: url(https://r1.ilikewallpaper.net/ipad-wallpapers/download/87484/space-stars-galaxy-abstract-4k-ipad-wallpaper-ilikewallpaper_com.jpg);
+            background-repeat: no-repeat;
+            background-size: 150%;
+            background-size: fill;
+            background-attachment: fixed;
+            background-color: #afaeae;
+        height:100%;
 
         }
+      
 
         #leftMenu {
 	height: 100%;
